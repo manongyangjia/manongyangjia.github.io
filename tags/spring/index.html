@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="spring,">
+  <meta name="keywords" content="manongyangjia, mybatis">
 
 
 
@@ -79,37 +79,16 @@
 
 
 
-<meta name="description" content="Spring作为一个IOC容器，今天我们学习它作为web解析的地方，学习下webmvc包的代码。我们先看下web.xml文件  可以看到通过DispatcherServlet来实现页面的mapper处理。 DispatcherServlet-&amp;gt;FrameworkServlet-&amp;gt;HttpServletBean-&amp;gt;HttpServlet 这是集成关系从HttpServletBean">
-<meta name="keywords" content="spring">
-<meta property="og:type" content="article">
-<meta property="og:title" content="spring源码学习(一)">
-<meta property="og:url" content="http://yoursite.com/2019/05/29/spring源码学习-一/index.html">
+<meta name="description" content="记录一个码农的搬砖历程">
+<meta property="og:type" content="website">
+<meta property="og:title" content="manongyangjia">
+<meta property="og:url" content="http://yoursite.com/tags/spring/index.html">
 <meta property="og:site_name" content="manongyangjia">
-<meta property="og:description" content="Spring作为一个IOC容器，今天我们学习它作为web解析的地方，学习下webmvc包的代码。我们先看下web.xml文件  可以看到通过DispatcherServlet来实现页面的mapper处理。 DispatcherServlet-&amp;gt;FrameworkServlet-&amp;gt;HttpServletBean-&amp;gt;HttpServlet 这是集成关系从HttpServletBean">
+<meta property="og:description" content="记录一个码农的搬砖历程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/pasted-0.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-2.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-3.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-4.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-6.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-7.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-8.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-9.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-11.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-17.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-18.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-20.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-19.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-21.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-22.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-15.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-23.png">
-<meta property="og:image" content="http://yoursite.com/images/pasted-24.png">
-<meta property="og:updated_time" content="2019-05-29T05:10:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="spring源码学习(一)">
-<meta name="twitter:description" content="Spring作为一个IOC容器，今天我们学习它作为web解析的地方，学习下webmvc包的代码。我们先看下web.xml文件  可以看到通过DispatcherServlet来实现页面的mapper处理。 DispatcherServlet-&amp;gt;FrameworkServlet-&amp;gt;HttpServletBean-&amp;gt;HttpServlet 这是集成关系从HttpServletBean">
-<meta name="twitter:image" content="http://yoursite.com/images/pasted-0.png">
+<meta name="twitter:title" content="manongyangjia">
+<meta name="twitter:description" content="记录一个码农的搬砖历程">
 
 
 
@@ -139,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/29/spring源码学习-一/">
+  <link rel="canonical" href="http://yoursite.com/tags/spring/">
 
 
 
 
 
-  <title>spring源码学习(一) | manongyangjia</title>
+  <title>标签: spring | manongyangjia</title>
   
 
 
@@ -164,7 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,179 +227,52 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>spring<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/29/spring源码学习-一/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="gst">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="manongyangjia">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">spring源码学习(一)</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2019/05/29/spring源码学习-一/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">spring源码学习(一)</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T09:47:16+08:00">
-                2019-05-29
-              </time>
-            
+            </a>
+        
+      </h2>
 
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-29T09:47:16+08:00" content="2019-05-29">
+          05-29
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>Spring作为一个IOC容器，今天我们学习它作为web解析的地方，学习下webmvc包的代码。<br>我们先看下web.xml文件</p>
-<p><img src="/images/pasted-0.png" alt="upload successful"></p>
-<p>可以看到通过DispatcherServlet来实现页面的mapper处理。</p>
-<p>DispatcherServlet-&gt;FrameworkServlet-&gt;HttpServletBean-&gt;HttpServlet</p>
-<p>这是集成关系从HttpServletBean可以看出它是一个httpservlet ,</p>
-<p>我们看下HttpServletBean的init方法</p>
-<p><img src="/images/pasted-2.png" alt="upload successful"></p>
-<p>可以看到初始化方法在initServletBean中。我们继续看下FrameworkServlet中的initServletBean</p>
-<p><img src="/images/pasted-3.png" alt="upload successful"></p>
-<p><img src="/images/pasted-4.png" alt="upload successful"></p>
-<p> 我们看下DispatcherServlet的onRefresh</p>
-<p><img src="/images/pasted-6.png" alt="upload successful"></p>
-<p>我们发现在这里进行了初始化，重点分析下initHandlerMappings方法</p>
-<p><img src="/images/pasted-7.png" alt="upload successful"></p>
-<p><img src="/images/pasted-8.png" alt="upload successful"></p>
-<p><img src="/images/pasted-9.png" alt="upload successful"></p>
-<p>可以看到把所有的handlemapping都放到map中。</p>
-<p>我们在看处理的地方</p>
-<p><img src="/images/pasted-11.png" alt="upload successful"></p>
-<p><img src="/images/pasted-17.png" alt="upload successful"></p>
-<p><img src="/images/pasted-18.png" alt="upload successful"></p>
-<p>我们看下lookupHandlerMethod 这个方法</p>
-<p><img src="/images/pasted-20.png" alt="upload successful"></p>
-<p><img src="/images/pasted-19.png" alt="upload successful"></p>
-<p>看到这里我也蒙圈了。这mappingRegistry玩意才是关键。</p>
-<p><img src="/images/pasted-21.png" alt="upload successful"></p>
-<p>打开InitializingBean 发现这个接口的唯一方法是afterPropertiesSet。很显然spring又在构造方法埋点了。<br><img src="/images/pasted-22.png" alt="upload successful"></p>
-<p>可以看到根据url从handlerMap 得到处理的bean对应的method方法.</p>
-<p>我们继续看下处理的地方</p>
-<p><img src="/images/pasted-15.png" alt="upload successful"></p>
-<p><img src="/images/pasted-23.png" alt="upload successful"></p>
-<p><img src="/images/pasted-24.png" alt="upload successful"></p>
-<p>异步处理下。</p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/spring/" rel="tag"># spring</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/05/27/mybatis-源码学习-二-sqlsession/" rel="next" title="mybatis 源码学习(二)sqlsession">
-                <i class="fa fa-chevron-left"></i> mybatis 源码学习(二)sqlsession
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -428,10 +280,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -653,10 +501,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
