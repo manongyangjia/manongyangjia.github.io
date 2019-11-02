@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="manongyangjia, mybatis">
+  <meta name="keywords" content="debian,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="记录一个码农的搬砖历程">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="1、增加服务文件 vi /etc/systemd/system/rc-local.service [Unit]Description=/etc/rc.localConditionPathExists=/etc/rc.local [Service]Type=forkingExecStart=/etc/rc.local startTimeoutSec=0StandardOutput=ttyRemain">
+<meta name="keywords" content="debian">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debian增加开机启动">
+<meta property="og:url" content="http://yoursite.com/2019/11/02/Debian增加开机启动/index.html">
 <meta property="og:site_name" content="manongyangjia">
-<meta property="og:description" content="记录一个码农的搬砖历程">
+<meta property="og:description" content="1、增加服务文件 vi /etc/systemd/system/rc-local.service [Unit]Description=/etc/rc.localConditionPathExists=/etc/rc.local [Service]Type=forkingExecStart=/etc/rc.local startTimeoutSec=0StandardOutput=ttyRemain">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-27T03:23:12.000Z">
+<meta property="og:updated_time" content="2019-11-02T05:57:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="记录一个码农的搬砖历程">
+<meta name="twitter:title" content="Debian增加开机启动">
+<meta name="twitter:description" content="1、增加服务文件 vi /etc/systemd/system/rc-local.service [Unit]Description=/etc/rc.localConditionPathExists=/etc/rc.local [Service]Type=forkingExecStart=/etc/rc.local startTimeoutSec=0StandardOutput=ttyRemain">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/02/Debian增加开机启动/">
 
 
 
 
 
-  <title>分类 | manongyangjia</title>
+  <title>Debian增加开机启动 | manongyangjia</title>
   
 
 
@@ -230,40 +231,185 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/02/Debian增加开机启动/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gst">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="manongyangjia">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 4 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/debian/">debian</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/redis/">redis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/spring/">spring</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">2</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Debian增加开机启动</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-02T13:47:00+08:00">
+                2019-11-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/debian/" itemprop="url" rel="index">
+                    <span itemprop="name">debian</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>1、增加服务文件</p>
+<p>vi /etc/systemd/system/rc-local.service</p>
+<p>[Unit]<br>Description=/etc/rc.local<br>ConditionPathExists=/etc/rc.local</p>
+<p>[Service]<br>Type=forking<br>ExecStart=/etc/rc.local start<br>TimeoutSec=0<br>StandardOutput=tty<br>RemainAfterExit=yes<br>SysVStartPriority=99</p>
+<p>[Install]<br>WantedBy=multi-user.target</p>
+<p>2、增加rc.local文件</p>
+<p>vi /etc/rc.local</p>
+<p>#!/bin/sh -e</p>
+<p>exit 0</p>
+<p>添加权限：</p>
+<p>chmod +x /etc/rc.local</p>
+<p>设置到系统启动：</p>
+<p>systemctl enable rc-local</p>
+<p>启动脚本：</p>
+<p>systemctl start rc-local.service</p>
+<p>检查服务状态：</p>
+<p>systemctl status rc-local.service</p>
+<p>你已经增加了系统启动脚本，可以在这个脚本里面增加你想启动的程序，例如</p>
+<p>cd /home/gst/tomcat/bin</p>
+<p>./strat.sh</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/debian/" rel="tag"># debian</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/05/redis-延迟消息/" rel="next" title="redis 延迟消息">
+                <i class="fa fa-chevron-left"></i> redis 延迟消息
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
